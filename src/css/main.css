@@ -3,8 +3,17 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.header {
-  background-color: #fff;
+.button {
+  font-size: 14px;
+  background-color: #ff9d00;
+  border: none;
+  color: #fff;
+  padding: 13px 22px;
+  border-radius: 5px;
+}
+
+.button img {
+  vertical-align: middle;
 }
 
 .header-contacts {
@@ -14,4 +23,12 @@ body {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header-contacts__phone {
+  font-size: 22px;
+  margin-right: 13px;
 }
