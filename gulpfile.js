@@ -14,6 +14,7 @@ gulp.task('serve', ['sass'], function() {
     //Следим за изменениями файлов
     gulp.watch("src/sass/*.sass", ['sass']);
     gulp.watch("src/*.html").on('change', browserSync.reload);
+    gulp.watch("src/js/*.js").on('change', browserSync.reload);
 });
 
 // Компилируем Sass в SCC и обновляем страницу
