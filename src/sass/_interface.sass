@@ -1,13 +1,36 @@
+.section
+  &-title
+    font-size: 27px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+    margin-bottom: 29px
+    &::after
+      content: ''
+      margin-top: 12px
+      display: block
+      height: 6px
+      background: url(../img/line.png) center no-repeat
+
 .button
   font-size: 14px
   background-color: $active-color
-  border: none
+  border: 1px solid transparent
   color: $text-color-light
   padding: 13px 22px
   border-radius: 5px
   &:hover
     background-color: lighten($active-color, 5)
     cursor: pointer
+  &-o
+    background-color: transparent
+    color: $text-color-dark
+    border: 1px solid rgba(#373733, 0.5)
+    &:hover
+      background-color: lighten($active-color, 5)
+      color: $text-color-light
+      border: 1px solid transparent
+      cursor: pointer
   img
     vertical-align: middle
   &_big

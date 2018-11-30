@@ -18,10 +18,26 @@ button:focus {
   outline: none;
 }
 
+.section-title {
+  font-size: 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 29px;
+}
+
+.section-title::after {
+  content: '';
+  margin-top: 12px;
+  display: block;
+  height: 6px;
+  background: url("../img/line.png") center no-repeat;
+}
+
 .button {
   font-size: 14px;
   background-color: #ff9d00;
-  border: none;
+  border: 1px solid transparent;
   color: #fff;
   padding: 13px 22px;
   border-radius: 5px;
@@ -29,6 +45,19 @@ button:focus {
 
 .button:hover {
   background-color: #ffa71a;
+  cursor: pointer;
+}
+
+.button-o {
+  background-color: transparent;
+  color: #373737;
+  border: 1px solid rgba(55, 55, 51, 0.5);
+}
+
+.button-o:hover {
+  background-color: #ffa71a;
+  color: #fff;
+  border: 1px solid transparent;
   cursor: pointer;
 }
 
@@ -330,4 +359,29 @@ button:focus {
 .numbers-block__text {
   font-size: 16px;
   font-weight: 300;
+}
+
+.products {
+  padding-top: 57px;
+  padding-bottom: 73px;
+}
+
+.products-block {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.products-block__img {
+  margin-bottom: 19px;
+  min-height: 281px;
+}
+
+.products-block__title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+.products-block__button {
+  margin-right: 10px;
 }
