@@ -98,6 +98,37 @@ button:focus {
   padding-right: 13px;
 }
 
+@-webkit-keyframes move {
+  from {
+    opacity: 0;
+    margin-bottom: -100px;
+  }
+
+  to {
+    opacity: 1;
+    margin-bottom: 0;
+  }
+}
+
+@keyframes move {
+  from {
+    opacity: 0;
+    margin-bottom: -100px;
+  }
+
+  to {
+    opacity: 1;
+    margin-bottom: 0;
+  }
+}
+
+.animate {
+  -webkit-animation-name: move;
+  animation-name: move;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
 .main {
   position: relative;
   padding-top: 65px;
