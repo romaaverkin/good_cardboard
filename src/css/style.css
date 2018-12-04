@@ -102,11 +102,15 @@ button:focus {
   from {
     opacity: 0;
     margin-bottom: -100px;
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
   }
 
   to {
     opacity: 1;
     margin-bottom: 0;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
   }
 }
 
@@ -114,17 +118,23 @@ button:focus {
   from {
     opacity: 0;
     margin-bottom: -100px;
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
   }
 
   to {
     opacity: 1;
     margin-bottom: 0;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
   }
 }
 
 .animate {
-  -webkit-animation-name: move;
-  animation-name: move;
+  -webkit-animation-name: move,rotate;
+  animation-name: move,rotate;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
 }
