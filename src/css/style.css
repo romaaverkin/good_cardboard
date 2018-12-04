@@ -426,3 +426,21 @@ button:focus {
 .products-block__button {
   margin-right: 10px;
 }
+
+.contacts {
+  padding-top: 73px;
+  padding-bottom: 87px;
+}
+
+.contacts-block {
+  background-color: #fff;
+  padding: 33px 34px 39px 34px;
+}
+
+.contacts-block__title {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 30px;
+}
