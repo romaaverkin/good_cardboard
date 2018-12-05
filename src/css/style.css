@@ -450,3 +450,12 @@ button:focus {
 .contacts-block__text {
   margin-bottom: 30px;
 }
+
+.contacts-block__mail img {
+  float: left;
+  margin-right: 10px;
+  margin-top: -1px;
+  padding: 0;
+  width: 25px;
+  height: 25px;
+}
